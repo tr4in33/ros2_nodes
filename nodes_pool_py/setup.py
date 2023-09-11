@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            "subscriber_node = nodes_pool_py.subscriber.py:main"
         ],
     },
 )

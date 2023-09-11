@@ -1,6 +1,6 @@
 # ros2_nodes2
 
-## Подготовка
+	## Подготовка
 
 ### Установка ROS2
 
@@ -55,10 +55,10 @@
 
 ### Запуск узлов
 
-Запуск airplane_ros:
+Запуск узла камеры airplane_ros:
 
 	ros2 run airplane_ros flycam_cpp 
 
-Запуск nodes_pool_py:
+Запуск узла затычки nodes_pool_py:
 
 	ros2 run nodes_pool_py subscriber_node

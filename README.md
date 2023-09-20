@@ -52,6 +52,11 @@
 
 ## БАЗА
 
+### Resolve dependencies from ~/ros2_ws
+
+	rosedp update
+	rosdep install -i --from-path src --rosdistro humble -y
+
 Помещаем склонированные узлы в ~/ros2_ws/src/ 
 
 ### Сборка узлов из под папки ~/ros2_ws/src/

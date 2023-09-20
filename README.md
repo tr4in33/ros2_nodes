@@ -21,6 +21,7 @@
     sudo apt update
     sudo apt upgrade
     sudo apt install ros-humble-desktop
+    sudo apt install python3-colcon-common-extensions
 
 
 ### Создать папку проекта в рабочем пространстве ~/ros2_ws/src/

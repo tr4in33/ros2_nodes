@@ -1,7 +1,10 @@
 # ros2_nodes2
 
 ## Подготовка
+### Установка сборщика проектов colcon:
 
+    sudo apt install python3-colcon-common-extensions 
+    
 ### Установка ROS2
 
     sudo apt update && sudo apt install locales
@@ -18,31 +21,25 @@
 
     echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
-    sudo apt update
-    sudo apt upgrade
-    sudo apt install ros-humble-desktop
-    sudo apt install python3-colcon-common-extensions
-
 
 ### Создать папку проекта в рабочем пространстве ~/ros2_ws/src/
 
 ### Настроил bash, добавив в .bashrc :
 
-Настрол работу с ROS2 в терминале:
+Настройка работы с ROS2 в терминале:
 
     source /opt/ros/humble/setup.sh
 
-Настроил автокомпиляцию с помощью сборщика в bashrc:
+Настройка работы с colcon с помощью сборщика в bashrc:
 
     source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
  
-Настроил работу с рабочим пространством
+Настрока работы с рабочим пространством
 
-    source /home/tr4in33/ros2_ws/install/setup.bash
+    source /home/$USER/ros2_ws/install/setup.bash
 
 
-### Исправил ошибку версий setuptools, заменив 59.6.0 на 58.2.0:
-
+### Исправление ошибки версий setuptools, заменив 59.6.0 на 58.2.0:
     pip3 install setuptools==58.2.0
 
 
@@ -51,11 +48,6 @@
      export AMENT_PREFIX_PATH=''
 
 ## БАЗА
-
-### Resolve dependencies from ~/ros2_ws
-
-	rosedp update
-	rosdep install -i --from-path src --rosdistro humble -y
 
 Помещаем склонированные узлы в ~/ros2_ws/src/ 
 

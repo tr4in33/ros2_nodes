@@ -51,6 +51,10 @@
 
 Помещаем склонированные узлы в ~/ros2_ws/src/ 
 
+### Определение всех зависимостей в рабочем пространстве
+
+ 	rosdep install --from-paths src --ignore-src -r -y
+
 ### Сборка узлов из под папки ~/ros2_ws/src/
 
 	colcon build	
